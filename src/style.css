@@ -1,11 +1,17 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: grey;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,4 +88,40 @@ body {
 
 .orange {
     background-color: orange;
+}
+
+.stuff {
+    border: 2px solid black;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.scramble {
+    padding: 4px;
+    border: 2px solid black;
+}
+
+.scramble:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.previous-moves{
+    border: 2px solid black;
+    margin: 0;
+    padding: 4px;
+    max-height: 300px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.title {
+    border-bottom: 2px solid black;
+}
+
+li {
+    list-style-type: none;
 }

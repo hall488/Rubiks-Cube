@@ -11,12 +11,11 @@ const Pan = () => {
   let renderInterval;
 
   document.addEventListener("keydown", (e) => {
-    console.log(e);
-    if (e.shiftKey) renderInterval = setInterval(rotateCube, 66);
+    if (e.key == "Control") renderInterval = setInterval(rotateCube, 66);
   });
 
   document.addEventListener("keyup", (e) => {
-    if (!e.shiftKey) clearInterval(renderInterval);
+    if (e.key == "Control") clearInterval(renderInterval);
   });
 
   document.addEventListener("mousemove", updateMousePosition);
