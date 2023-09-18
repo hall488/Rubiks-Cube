@@ -21,7 +21,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.front, .back, .top, .bottom, .left, .right {
+.front, .back, .top, .down, .left, .right {
     position: absolute;
     display: grid;
     height: 100%;
@@ -36,22 +36,22 @@ body {
 }
 
 .back {
-    transform: translateZ(-100px);
+    transform: rotate(180deg) scale(-1) translateZ(-100px);
 }
 
 .left {
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(100px);
 }
 
 .right {
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
 }
 
 .top {
     transform: rotateX(90deg) translateZ(100px);
 }
 
-.bottom {
+.down{
     transform: rotateX(-90deg) translateZ(100px);
 }
 
